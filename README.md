@@ -12,10 +12,16 @@ Bengaluru, India.
 
 ### Selected work
 
+**[AML IBM benchmark](https://github.com/coachuttam/aml-ibm-experiment)**
+LightGBM ranking plus an investigation workflow, tested on IBM's public 5-million-transaction AML
+dataset. Matches the rules' recall with 715 alerts instead of 167,778. Time-split, leakage-tested,
+with an honest ablation of where the model leans on the data. 229 tests.
+[Plain-English explainer](https://github.com/coachuttam/aml-ibm-experiment/blob/main/docs/EXPLAINED.md)
+
 **[AML Alert Investigator](https://github.com/coachuttam/aml-alert-investigator)**
 Qwen2.5-1.5B fine-tuned with QLoRA to draft anti-money-laundering investigations. Python computes
 every number, the model labels and explains, each claim links to the transactions behind it, and an
-analyst approves or overrides. Scored against a rules baseline on a held-out set run once — including
+analyst approves or overrides. Scored against a rules baseline on a held-out set run once, including
 where the rules won. 143 tests.
 [Live demo](https://aml-alert-investigator.streamlit.app) ·
 [Model](https://huggingface.co/coachuttam/aml-alert-investigator-qwen2.5-1.5b-qlora)
@@ -38,4 +44,4 @@ MSc thesis: U-Net segmentation on BraTS, distilled into a smaller model for fast
 - Peer-reviewed publication in the International Journal of Sports Medicine
 - Built and ran a coaching business, so I ship things people actually use
 
-Python · PyTorch · transformers · PEFT/LoRA · pandas · scikit-learn · Streamlit · FastAPI · SQL
+Python · PyTorch · transformers · PEFT/LoRA · LightGBM · pandas · scikit-learn · Streamlit · FastAPI · SQL
